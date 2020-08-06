@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 
 
 
@@ -11,6 +11,11 @@ def helloWorld():
 @app.route("/<name>")
 def greet(name):
     return name + "さん、はろー！"
+
+@app.route("/template")
+def template():|
+    py_name = "すなばこ"
+    return render_template("index.html", name = py_name)
 
 
 
