@@ -13,7 +13,7 @@ def greet(name):
     return name + "さん、はろー！"
 
 @app.route("/template")
-def template():|
+def template():
     py_name = "すなばこ"
     return render_template("index.html", name = py_name)
 
