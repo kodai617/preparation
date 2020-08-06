@@ -8,7 +8,9 @@ app = Flask(__name__)
 def helloWorld():
     return "Hello World."
 
-
+@app.route("/<name>")
+def greet(name):
+    return name + "さん、はろー！"
 
 
 
