@@ -20,7 +20,7 @@ def template():
 
 @app.route("/salada")
 def salada():
-    return render_template("salada.html" )
+    return render_template("salada.html")
 
 
 
