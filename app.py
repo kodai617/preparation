@@ -18,6 +18,11 @@ def template():
     return render_template("index.html", name = py_name)
 
 
+@app.route("/salada")
+def salada():
+    return render_template("salada.html" )
+
+
 
 
 if __name__ == "__main__":
